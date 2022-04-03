@@ -7,9 +7,9 @@ const [width, setWidth] = useState(320);
   return (
     <div id="main">
     <br/>
-      <input type="range" max="800" min="100" value={height} onChange={(e) => setHeight(e.target.value)} id="height-slider"></input>Height
+      <input type="range" max="800" min="100" value={height} onChange={(e) => setHeight(e.target.value)} id="height-slider"></input>Height={height}px
       <br/>
-      <input type="range" max="800" min="100" value={width} onChange={(e) => setWidth(e.target.value)} id="width-slider"></input>Width
+      <input type="range" max="800" min="100" value={width} onChange={(e) => setWidth(e.target.value)} id="width-slider"></input>Width={width}px
       <br/>
       <img src={img} id="resizable-img" style={{width:`${width}px`,height:`${height}px`}}></img>
     
